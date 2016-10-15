@@ -72,6 +72,7 @@ function lightBox() {
   });
   $(".lightbox-dark, .lightbox-light").click(function() {
     $(".lightbox-dark, .lightbox-light").css("visibility","hidden");
+    $("iframe").remove();
   });
 }
 onSearch();
