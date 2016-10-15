@@ -21,8 +21,8 @@ function displayData (data) {
     }).forEach(function(item) {
       var id = item.id.videoId;
       resultElement += '<div class ="video-thumbnail-fig"><a class ="video" href="https://www.youtube.com/watch?v='+ id+'">'+
-      '<img src='+item.snippet.thumbnails.default.url+'></a> <a href="https://www.youtube.com/channel/'+item.snippet.channelId+'" target="_blank">'+
-      '<span>More from this Channel</span></a></div>';
+      '<img src='+item.snippet.thumbnails.medium.url+'></a> <a href="https://www.youtube.com/channel/'+item.snippet.channelId+'" target="_blank">'+
+      '<span class="channel-link">More from this Channel</span></a></div>';
     });
   }
   else {
